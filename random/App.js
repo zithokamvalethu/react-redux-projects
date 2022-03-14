@@ -1,70 +1,67 @@
-
 import React from "react";
 import "./App.css";
-import ReactDOM from "react-dom";
-
 
 const quotes = [
   {
     quote: "Your attitude determines your direction.",
-    author: "Ralph Waldo Emerson"
+    author: "Ralph Waldo Emerson",
   },
   {
     quote: "Do what you have to do until you can do what you want to do.",
-    author: "Oprah Winfrey"
+    author: "Oprah Winfrey",
   },
   {
     quote: "Being alone has a power that very few people can handle.",
-    author: "Steven Aitchison"
+    author: "Steven Aitchison",
   },
   {
     quote: "My goal is to build a life I don't need a vacation from.",
-    author: "Rob Hill Sr"
+    author: "Rob Hill Sr",
   },
   { quote: "Always do what you are afraid to do.", author: "Unknown" },
   {
     quote: "Be somebody who makes everybody feel like a somebody.",
-    author: "Unknown"
+    author: "Unknown",
   },
   {
     quote: "Make it happen. Shock everyone.",
-    author: "Unknown"
+    author: "Unknown",
   },
   {
     quote: "Three months from now, you'll thank yourself.",
-    author: "Unknown"
+    author: "Unknown",
   },
   {
     quote: "Travel far enough to meet yourself.",
-    author: "Unknown"
+    author: "Unknown",
   },
   {
     quote: "Progress, not perfection.",
-    author: "Unknown"
+    author: "Unknown",
   },
   {
     quote: "Just keep swimming .",
-    author: "Dory, Find Nemo"
+    author: "Dory, Find Nemo",
   },
   {
     quote: "Remember why you started.",
-    author: "Unknown"
-  }
+    author: "Unknown",
+  },
 ];
 
 const colors = [
-  '#16a085',
-  '#27ae60',
-  '#2c3e50',
-  '#f39c12',
-  '#e74c3c',
-  '#9b59b6',
-  '#FB6964',
-  '#342224',
-  '#472E32',
-  '#BDBB99',
-  '#77B1A9',
-  '#73A857'
+  "#16a085",
+  "#27ae60",
+  "#2c3e50",
+  "#f39c12",
+  "#e74c3c",
+  "#9b59b6",
+  "#FB6964",
+  "#342224",
+  "#472E32",
+  "#BDBB99",
+  "#77B1A9",
+  "#73A857",
 ];
 
 class MyReactElement extends React.Component {
@@ -73,7 +70,7 @@ class MyReactElement extends React.Component {
     this.state = {
       quote: "Your attitude determines your direction.",
       author: "Ralph Waldo Emerson",
-      color: "#0889A6"
+      color: "#0889A6",
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -83,7 +80,7 @@ class MyReactElement extends React.Component {
     this.setState({
       quote: quotes[randomNumber].quote,
       author: quotes[randomNumber].author,
-      color: colors[randomNumber]
+      color: colors[randomNumber],
     });
   }
 
@@ -93,7 +90,7 @@ class MyReactElement extends React.Component {
         id="main"
         style={{
           backgroundColor: this.state.color,
-          transition: "background-color 1s"
+          transition: "background-color 1s",
         }}
       >
         <div id="quote-box">
@@ -103,7 +100,7 @@ class MyReactElement extends React.Component {
               id="quote-left"
               style={{
                 color: this.state.color,
-                transition: "background-color 1s"
+                transition: "background-color 1s",
               }}
             >
               {" "}
@@ -112,7 +109,7 @@ class MyReactElement extends React.Component {
               id="text"
               style={{
                 color: this.state.color,
-                transition: "background-color 1s"
+                transition: "background-color 1s",
               }}
             >
               {this.state.quote}
@@ -122,7 +119,7 @@ class MyReactElement extends React.Component {
             id="author"
             style={{
               color: this.state.color,
-              transition: "background-color 1s"
+              transition: "background-color 1s",
             }}
           >
             -{this.state.author}
@@ -135,38 +132,11 @@ class MyReactElement extends React.Component {
                 style={{
                   backgroundColor: this.state.color,
                   transition: "background-color 1s",
-                  color: "white"
+                  color: "white",
                 }}
               >
                 Next quote
               </button>
-            </div>
-            <div>
-              <a
-                id="tweet-quote"
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://twitter.com/intent/tweet/?text=${
-                  this.state.quote
-                } - ${this.state.author}`}
-              >
-                <button
-                 
-
-                  id="button"
-                  style={{
-                    backgroundColor: this.state.color,
-                    transition: "background-color 1s"
-                  }}
-                >Twitter
-                  <i
-                    className="fab fa-twitter"
-                    style={{
-                      color: "#ffffff"
-                    }}
-                  />
-                </button>
-              </a>
             </div>
           </div>
         </div>
@@ -174,9 +144,5 @@ class MyReactElement extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<MyReactElement />, document.getElementById("root"));
-
-  
 
 export default MyReactElement;
