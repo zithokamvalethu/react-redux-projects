@@ -1,0 +1,30 @@
+body {
+  margin: 1rem;
+  background: teal;
+  font-family: "Nanum Gothic Coding", monospace;
+  margin: 1rem;
+  padding: 12rem;
+}
+
+#drum-pad {
+  max-width: 1700px;
+  width: 100%;
+  display: flex;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px 3px #333;
+  align-items: center;
+}
+#drum-machine {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20px, 100px));
+  grid-template-rows: 60px 60px 60px;
+  width: 30%;
+  grid-gap: 5px;
+  margin-top: 50px;
+}
+/* #drum-pads {
+  
+
+} */
