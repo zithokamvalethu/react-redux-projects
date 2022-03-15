@@ -1,30 +1,28 @@
 body {
-  margin: 1rem;
+  margin-left: 12rem;
   background: teal;
   font-family: "Nanum Gothic Coding", monospace;
-  margin: 1rem;
-  padding: 12rem;
+  align-items: center;
 }
 
 #drum-pad {
-  max-width: 1700px;
+  max-width: 50px;
   width: 100%;
   display: flex;
-  margin: 50px;
-  padding: 20px;
   border-radius: 5px;
   box-shadow: 5px 5px 8px 3px #333;
-  align-items: center;
 }
+/* #drum-machine {
+ 
+
+} */
 #drum-machine {
   display: grid;
   grid-template-columns: repeat(3, minmax(20px, 100px));
   grid-template-rows: 60px 60px 60px;
-  width: 30%;
-  grid-gap: 5px;
+  width: 50%;
+  grid-gap: 7px;
   margin-top: 50px;
+  margin: 12rem;
+  padding: 12rem;
 }
-/* #drum-pads {
-  
-
-} */
