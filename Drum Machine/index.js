@@ -74,6 +74,7 @@
 //   var audio = document.getElementById("H");
 //   audio.pause();
 // }
+
 let sound = null;
 const playsound = (event) => {
   if (sound !== null) {
@@ -82,15 +83,11 @@ const playsound = (event) => {
   }
   id = event.target.value;
   if (id === "Q") id = "Q";
-  if (id === " W") id = "W";
+  if (id === "W") id = "W";
   sound = document.getElementById(id);
-
-  //   var instrument =
-  //     sound === null && sound.src.split("/")[sound.src.split("/").length - 1];
-  //   document.getElementById("display").innerHTML = instrument.replace(
-  //     ".mp3",
-  //     ""
-  //   );
+  var instrument =
+    sound !== null && sound.src.split("/")[sound.src.split("/").length - 1];
+  document.getElementById("display").innerHTML = instrument.replace(".mp3", "");
   sound.play();
 };
 window.addEventListener("click", playsound);

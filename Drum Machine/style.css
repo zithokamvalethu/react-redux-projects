@@ -1,8 +1,9 @@
 body {
-  margin-left: 12rem;
   background: teal;
   font-family: "Nanum Gothic Coding", monospace;
   align-items: center;
+  margin: auto;
+  padding: 2rem;
 }
 
 #drum-pad {
@@ -12,10 +13,17 @@ body {
   border-radius: 5px;
   box-shadow: 5px 5px 8px 3px #333;
 }
-/* #drum-machine {
- 
-
-} */
+#display {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(1px, 80px));
+  grid-template-rows: 0px 40px 50px 0px;
+  width: 17%;
+  margin-bottom: 4rem;
+  font-family: "Nanum Gothic Coding", monospace;
+  text-align: center;
+  margin-top: 50px;
+  background: white;
+}
 #drum-machine {
   display: grid;
   grid-template-columns: repeat(3, minmax(20px, 100px));
@@ -23,6 +31,4 @@ body {
   width: 50%;
   grid-gap: 7px;
   margin-top: 50px;
-  margin: 12rem;
-  padding: 12rem;
 }
